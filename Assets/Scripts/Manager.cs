@@ -9,9 +9,10 @@ public class Manager : MonoBehaviour
     public int maxTurn;
     public Text turnText;
     public GameObject resultPlane;
+    public Text resultText;
 
     SceneController sceneController;
-    // Start is called before the first frame update
+
     void Start()
     {
         currentTurn = maxTurn;
@@ -19,20 +20,27 @@ public class Manager : MonoBehaviour
         resultPlane.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (currentTurn == 0)
         {
+            resultText.text = "おわり！";
             resultPlane.SetActive(true);
         }
     }
 
-    //Update turn
-    public void updateTurn()
+    //ターン更新
+    public void UpdateTurn()
     {
         currentTurn--;
         turnText.text = currentTurn.ToString();
+    }
+
+    //ゲームクリア
+    public void GameClear()
+    {
+        resultText.text = "クリア！！";
+        resultPlane.SetActive(true);
     }
     
 }

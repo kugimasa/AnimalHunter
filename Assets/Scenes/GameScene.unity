@@ -548,9 +548,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e36b671e4c2a4316a57fcd690b864be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTurn: 3
+  maxTurn: 5
   turnText: {fileID: 2013839114}
   resultPlane: {fileID: 124539178}
+  resultText: {fileID: 737260109}
 --- !u!114 &630114637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,7 +576,7 @@ GameObject:
   - component: {fileID: 737260110}
   - component: {fileID: 737260109}
   m_Layer: 5
-  m_Name: "\u304A\u308F\u308A"
+  m_Name: ResultText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1003,25 +1004,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fieldSize: 4
   fieldStep: 1.2
+  noGrassList: 08000000
   fieldData:
-  - F
   - H
-  - F
+  - None
   - A
+  - FD
+  - None
   - H
-  - F
-  - F
-  - F
-  - F
-  - F
-  - F
-  - F
-  - F
-  - F
-  - F
-  - F
+  - None
+  - FL
+  - FU
+  - FU
+  - FR
+  - FL
+  - H
+  - None
+  - FU
+  - FL
   field: {fileID: 1754376051}
-  FootPrint: {fileID: 2006947583246596603, guid: b3ef19e50724748af93398f558724f48,
+  FootPrintUP: {fileID: 2006947583246596603, guid: b3ef19e50724748af93398f558724f48,
+    type: 3}
+  FootPrintDOWN: {fileID: 2006947583246596603, guid: 8e8ae4adcfd874984aee2dc6c1078993,
+    type: 3}
+  FootPrintRIGHT: {fileID: 2006947583246596603, guid: 9d61c3b1aa811490386c5e794dafa59a,
+    type: 3}
+  FootPrintLEFT: {fileID: 2006947583246596603, guid: 1c99496555c9d4dd9a992a0749f2d96c,
     type: 3}
   Hole: {fileID: 5288721210157620456, guid: 93122e3fb4f4945f884485c33478dddd, type: 3}
   Animal: {fileID: 5883214730108385033, guid: 2cf87556435e44b11814c6d9f6d5541a, type: 3}
