@@ -7,11 +7,10 @@ public class Manager : MonoBehaviour
 {
     int currentTurn;
     public int maxTurn;
+
     public Text turnText;
     public GameObject resultPlane;
     public Text resultText;
-
-    SceneController sceneController;
 
     void Start()
     {

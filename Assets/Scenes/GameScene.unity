@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 630114633}
   - component: {fileID: 630114636}
   - component: {fileID: 630114637}
+  - component: {fileID: 630114638}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -564,6 +565,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672a2bbcfe2234192bbd9f86a8a87818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &630114638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630114632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0306d6a4f33d42b1a31f77056c1fdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldSize: 4
+  fieldStep: 1.2
+  noGrassList: 08000000
+  fieldData:
+  - H
+  - None
+  - A
+  - FD
+  - None
+  - H
+  - None
+  - FL
+  - FU
+  - FU
+  - FR
+  - FL
+  - H
+  - None
+  - FU
+  - FL
+  FieldGrid: {fileID: 1754376051}
+  FieldData: {fileID: 1763779771}
+  FootPrintUP: {fileID: 2006947583246596603, guid: b3ef19e50724748af93398f558724f48,
+    type: 3}
+  FootPrintDOWN: {fileID: 2006947583246596603, guid: 8e8ae4adcfd874984aee2dc6c1078993,
+    type: 3}
+  FootPrintRIGHT: {fileID: 2006947583246596603, guid: 9d61c3b1aa811490386c5e794dafa59a,
+    type: 3}
+  FootPrintLEFT: {fileID: 2006947583246596603, guid: 1c99496555c9d4dd9a992a0749f2d96c,
+    type: 3}
+  Hole: {fileID: 5288721210157620456, guid: 93122e3fb4f4945f884485c33478dddd, type: 3}
+  Animal: {fileID: 5883214730108385033, guid: 2cf87556435e44b11814c6d9f6d5541a, type: 3}
+  Grass: {fileID: 8687813921598352890, guid: 9bd5ec75e46dd4540acc956607513b6d, type: 3}
 --- !u!1 &737260107
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,7 +999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1754376052}
   m_Layer: 0
-  m_Name: Field
+  m_Name: FieldGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -982,7 +1028,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1763779773}
-  - component: {fileID: 1763779772}
   m_Layer: 0
   m_Name: FieldData
   m_TagString: Untagged
@@ -990,50 +1035,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1763779772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1763779771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0306d6a4f33d42b1a31f77056c1fdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fieldSize: 4
-  fieldStep: 1.2
-  noGrassList: 08000000
-  fieldData:
-  - H
-  - None
-  - A
-  - FD
-  - None
-  - H
-  - None
-  - FL
-  - FU
-  - FU
-  - FR
-  - FL
-  - H
-  - None
-  - FU
-  - FL
-  field: {fileID: 1754376051}
-  FootPrintUP: {fileID: 2006947583246596603, guid: b3ef19e50724748af93398f558724f48,
-    type: 3}
-  FootPrintDOWN: {fileID: 2006947583246596603, guid: 8e8ae4adcfd874984aee2dc6c1078993,
-    type: 3}
-  FootPrintRIGHT: {fileID: 2006947583246596603, guid: 9d61c3b1aa811490386c5e794dafa59a,
-    type: 3}
-  FootPrintLEFT: {fileID: 2006947583246596603, guid: 1c99496555c9d4dd9a992a0749f2d96c,
-    type: 3}
-  Hole: {fileID: 5288721210157620456, guid: 93122e3fb4f4945f884485c33478dddd, type: 3}
-  Animal: {fileID: 5883214730108385033, guid: 2cf87556435e44b11814c6d9f6d5541a, type: 3}
-  Grass: {fileID: 8687813921598352890, guid: 9bd5ec75e46dd4540acc956607513b6d, type: 3}
 --- !u!4 &1763779773
 Transform:
   m_ObjectHideFlags: 0
@@ -1082,7 +1083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.7899933, y: -31.600006}
+  m_AnchoredPosition: {x: -0.789978, y: -31.600006}
   m_SizeDelta: {x: -134.4, y: 56.89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013839114

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7313368475700961868}
   - component: {fileID: 2847733088999857493}
   - component: {fileID: 7336396379753705305}
+  - component: {fileID: 5995398775817867491}
   m_Layer: 0
   m_Name: Grass
   m_TagString: Untagged
@@ -94,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54188ea439d6a42cb92f6a68801c21b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: 
 --- !u!114 &2847733088999857493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,6 +115,23 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 7313368475700961868}
           m_MethodName: DestroyGrass
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7313368475700961868}
+          m_MethodName: HighLightGrass
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -151,3 +170,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.114096, y: 4.705774}
   m_EdgeRadius: 0
+--- !u!95 &5995398775817867491
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8687813921598352890}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 65f735b9d550a48c8a12af4b7ed514f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
